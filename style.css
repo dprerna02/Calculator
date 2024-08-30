@@ -1,0 +1,136 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6e6;
+    font-family: 'Arial', sans-serif;
+}
+/* Container to center everything */
+
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Calculator container styling */
+.calculator {
+    width: 400px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Display screen styling */
+#display {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    color: #0f0;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 2px 2px 5px #444, inset -2px -2px 5px #111;
+}
+
+/* Buttons grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+/* General button styling */
+.btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 5px #aaa, -2px -2px 5px #fff;
+    transition: all 0.3s ease;
+}
+
+.btn:active {
+    box-shadow: inset 2px 2px 5px #aaa, inset -2px -2px 5px #fff;
+}
+
+/* Operator buttons styling */
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+.operator:active {
+    background-color: #e08e00;
+}
+
+/* Clear button styling */
+.clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.clear:active {
+    background-color: #d32e25;
+}
+
+/* Delete button styling */
+.delete {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.delete:active {
+    background-color: #e0b700;
+}
+
+/* Equal button styling */
+.equal {
+    grid-column: span 2;
+    background-color: #34c759;
+    color: white;
+}
+
+
+.equal:active {
+    background-color: #28a745;
+}
+
+/* Zero button styling */
+.zero {
+    grid-column: span 2;
+}
+
+/* Number button styling */
+.number {
+    background-color: #d4d4d2;
+}
+
+.number:active {
+    background-color: #bdbdbd;
+}
